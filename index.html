@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web CV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><a href="#">Mert Can USLU</a></div>
+            <div id="navbar" class="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li><button>Brief me</button></li>
+                </ul>
+            </div>
+            <span id="menubtnopen" class="menubtn">
+                <i class="fas fa-bars"></i>
+            </span>
+            <span id="menubtnclose" class="menubtn hide">
+                <i class="fas fa-times"></i>
+            </span>
+        </nav>
+
+        <section class="home">
+            <div class="left-side">
+                <h2>Bring your brand to life with our help</h2>
+                <p>In your role as a professional web developer, you're up for just about any website-building
+                    challenge.</p>
+                <button>
+                    Contact us/>
+                </button>
+                <ul>
+                    <li><a href="#">Behance</a></li>
+                    <li><a href="#">Dribbble</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <img class="picture" src="img/man.jpg" alt="">
+            </div>
+        </section>
+    </div>
+
+    <script>
+        $(function () {
+            $("#menubtnopen").click(function () {
+                $("#navbar").toggle("slow");
+                $(this).hide();
+                $("#menubtnclose").show();
+            });
+            $("#menubtnclose").click(function () {
+                $("#navbar").toggle("slow");
+                $(this).hide();
+                $("#menubtnopen").show();
+            });
+        });
+    </script>
+</body>
+
+</html>

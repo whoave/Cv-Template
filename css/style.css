@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Roboto Mono", monospace;
+}
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body,
+html {
+  width: 100%;
+  background-color: #23272d;
+}
+
+.menubtn {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  margin: 0 5rem;
+}
+.container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+.container nav .logo {
+  font-weight: bold;
+}
+.container nav .navbar ul {
+  display: flex;
+  align-items: center;
+}
+.container nav .navbar ul li {
+  margin-right: 2rem;
+}
+.container nav .navbar ul li a:hover {
+  color: #33fdaa;
+}
+.container nav .navbar ul li a:active {
+  color: #33fdaa;
+}
+.container nav .navbar ul li button {
+  border-radius: 0.5rem;
+  border: 0;
+  padding: 0.5rem;
+  color: #23272d;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.container nav .navbar ul li button:hover {
+  background: #33fdaa;
+}
+.container section.home {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container section.home .left-side {
+  margin-top: 10rem;
+  flex-shrink: 0.5;
+  margin-left: 3rem;
+}
+.container section.home .left-side h2 {
+  font-size: 3rem;
+}
+.container section.home .left-side p {
+  margin: 2rem 0;
+}
+.container section.home .left-side button {
+  padding: 1rem 3rem;
+  background: #33fdaa;
+  border: 0;
+  font-weight: bold;
+  color: #23272d;
+  cursor: pointer;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transition: all 500ms;
+}
+.container section.home .left-side button:hover {
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+}
+.container section.home .left-side ul {
+  margin-top: 4rem;
+  display: flex;
+}
+.container section.home .left-side ul li {
+  margin-right: 1.5rem;
+}
+.container section.home .left-side ul li a {
+  color: #45484d;
+}
+.container section.home .left-side ul li a:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+.container section.home .right-side {
+  display: flex;
+  justify-content: center;
+}
+.container section.home .right-side img {
+  width: 30%;
+  height: 100%;
+  border-radius: 30rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menubtn {
+    display: block;
+    margin-top: 1.3rem;
+    padding: 1.5rem;
+    background: #33fdaa;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .menubtn.hide {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    margin: 0;
+    padding: 0;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  nav .navbar {
+    display: none;
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+  nav .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  nav .navbar ul li {
+    width: 100%;
+    display: block;
+    margin: 0 !important;
+    background: #000;
+    padding: 5px;
+  }
+  nav .navbar ul li:hover {
+    background: #333333;
+  }
+
+  section.home .left-side {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin: 2rem 0.5rem 0.5rem 0.5rem !important;
+    flex-wrap: nowrap;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
