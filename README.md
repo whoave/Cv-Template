@@ -7,6 +7,6 @@
 - FONT AWESOME
 
 *desktop*
-![desktop](screenshot.png)
+![desktop](screenshot.PNG)
 *mobile*
-![mobile](screenshotmobile.png)
+![mobile](screenshotmobile.PNG)
